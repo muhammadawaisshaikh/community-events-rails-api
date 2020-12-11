@@ -27,11 +27,11 @@ rails s
 # Creating version in a namespace in routes.rb
 rails generate versionist:new_api_version v1 V1 --path=value:v1
 
-# Defining resources in routes.rb
-resources :books
-
 # Model Creation Sample (Auto foreign key and association created)
 rails g model Product name:string description:text amount:integer admin:references
+
+# Defining resources in routes.rb
+resources :books
 
 # Making Controllers and views with scaffold
 rails g controller super_admin/admin index show new create edit update destroy
